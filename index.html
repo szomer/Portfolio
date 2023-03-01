@@ -6,13 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
   </head>
+  <!--Library-->
   <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  <!--Structure style-->
   <link rel="stylesheet" href="./css/outer.min.css" />
+  <!--Section style-->
   <link rel="stylesheet" href="./css/home.min.css" />
   <link rel="stylesheet" href="./css/projects.min.css" />
   <link rel="stylesheet" href="./css/about.min.css" />
   <link rel="stylesheet" href="./css/skills.min.css" />
   <link rel="stylesheet" href="./css/footer.min.css" />
+
   <body>
     <!-- Navigation Dots -->
     <div class="dots-navigation">
@@ -85,8 +89,21 @@
       </nav>
     </div>
 
+    <div class="theme-btn">
+      <span class="lead">theme</span>
+      <div class="form-check form-switch">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          role="switch"
+          id="themebtn"
+        />
+      </div>
+    </div>
+
     <!-- Snappable divs -->
     <div
+      id="snap-wrapper"
       data-bs-spy="scroll"
       data-bs-target="#myNavbar"
       data-bs-smooth-scroll="true"
@@ -225,7 +242,7 @@
       </div>
 
       <!-- About Section -->
-      <div id="about" class="snap-box">
+      <div id="about" class="scroll snap-box">
         <div
           class="about-box row d-flex align-items-center justify-content-evenly"
         >
@@ -253,20 +270,85 @@
 
       <!-- Skills Section -->
       <div id="skills" class="snap-box">
-        <h1>Skills</h1>
-        <p>Under construction..</p>
+        <div class="back_ground"></div>
+
+        <div class="fore_ground">
+          <div class="skills-title mb-5">
+            <h5 class="ms-5 lead">Skills</h5>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Voluptatem, dolor.
+            </p>
+          </div>
+
+          <div
+            class="row d-flex justify-content-center align-items-center mb-3"
+          >
+            <div class="col col-md-5 d-flex align-items-center">
+              <div class="skill-bars">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+                  iusto labore quas provident consequatur saepe alias, a quo
+                  sapiente commodi.
+                </p>
+
+                <div class="progressbar">
+                  <span>Sample text</span>
+                  <div class="progressbar-bg">
+                    <div id="progressbar1"></div>
+                  </div>
+                </div>
+                <div class="progressbar">
+                  <span>Sample text</span>
+                  <div class="progressbar-bg">
+                    <div id="progressbar2"></div>
+                  </div>
+                </div>
+                <div class="progressbar">
+                  <span>Sample text</span>
+                  <div class="progressbar-bg">
+                    <div id="progressbar3"></div>
+                  </div>
+                </div>
+                <div class="progressbar">
+                  <span>Sample text</span>
+                  <div class="progressbar-bg">
+                    <div id="progressbar4"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <!-- Contact Section -->
       <footer id="contact">
-        <h1>Contact</h1>
-        <p>Under construction..</p>
+        <div class="content">
+          <h1>Contact</h1>
+          <p>Under construction..</p>
+
+          <div class="camping-img">
+            <img src="./images/camping.svg" />
+          </div>
+        </div>
+
+        <div class="v">
+          <div class="v-left"></div>
+          <div class="v-right"></div>
+        </div>
+        <div class="bg"></div>
       </footer>
     </div>
 
+    <!-- Libraries -->
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/jquery.js"></script>
+    <!-- Other -->
     <script src="./js/script.js"></script>
+    <!-- Handle the project slider-->
     <script src="./js/slider.js"></script>
+    <!-- Handle the progression bar animations -->
+    <script src="./js/progressbars.js"></script>
   </body>
 </html>
