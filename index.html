@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+  </head>
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./css/outer.min.css" />
+  <link rel="stylesheet" href="./css/inner.min.css" />
+  <body>
+    <!-- Navigation Dots -->
+    <div class="dots-navigation">
+      <nav id="myNavbar" class="navbar position-fixed">
+        <ul class="nav nav-pills">
+          <div class="vertical-line"></div>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="#home"
+              data-bs-container="body"
+              data-bs-toggle="popover"
+              data-bs-placement="right"
+              data-bs-content="Home"
+              data-bs-trigger="hover focus"
+            >
+              <img src="./images/circle.svg" alt="Bootstrap"
+            /></a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="#about"
+              data-bs-container="body"
+              data-bs-toggle="popover"
+              data-bs-placement="right"
+              data-bs-content="About"
+              data-bs-trigger="hover focus"
+              ><img src="./images/circle.svg" alt="Bootstrap"
+            /></a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="#skills"
+              data-bs-container="body"
+              data-bs-toggle="popover"
+              data-bs-placement="right"
+              data-bs-content="Skills"
+              data-bs-trigger="hover focus"
+              ><img src="./images/circle.svg" alt="Bootstrap"
+            /></a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="#projects"
+              data-bs-container="body"
+              data-bs-toggle="popover"
+              data-bs-placement="right"
+              data-bs-content="Projects"
+              data-bs-trigger="hover focus"
+              ><img src="./images/circle.svg" alt="Bootstrap"
+            /></a>
+          </li>
+          <li class="nav-item mb-3">
+            <a
+              class="nav-link"
+              href="#contact"
+              data-bs-container="body"
+              data-bs-toggle="popover"
+              data-bs-placement="right"
+              data-bs-content="Contact"
+              data-bs-trigger="hover focus"
+              ><img src="./images/circle.svg" alt="Bootstrap"
+            /></a>
+          </li>
+          <div class="vertical-line"></div>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Snappable divs -->
+    <div
+      data-bs-spy="scroll"
+      data-bs-target="#myNavbar"
+      data-bs-smooth-scroll="true"
+      class="snap"
+      tabindex="0"
+    >
+      <!-- Home Section -->
+      <div id="home" class="snap-box">
+        <div class="home-video">
+          <div class="home-video-filter"></div>
+          <video autoplay muted loop id="myVideo">
+            <source src="./videos/clouds3.mp4" type="video/mp4" />
+          </video>
+        </div>
+
+        <div class="home-forest">
+          <img src="./images/treelinedark.png" />
+        </div>
+      </div>
+
+      <!-- About Section -->
+      <div id="about" class="snap-box">
+        <div
+          class="about-box row d-flex align-items-center justify-content-evenly"
+        >
+          <div class="about-cave align-items-center col-lg-8 col-xl-7">
+            <img src="images/cave.png" />
+            <div class="row">
+              <div class="col-md-9 about-text">
+                <h1 class="lead fs-3 ms-5">About Me</h1>
+                <p class="mx-1">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+                  suscipit adipisci debitis non, earum ipsam vitae quaerat
+                  magni? Ducimus fugiat perspiciatis repudiandae exercitationem?
+                  Qui velit, iusto deleniti minima totam sed.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="about-picture col-auto d-flex justify-content-center align-items-center"
+          >
+            <img src="./images/woman.svg" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Skills Section -->
+      <div id="skills" class="snap-box">
+        <h1>Skills</h1>
+        <p>Under construction..</p>
+      </div>
+
+      <!-- Projects Section -->
+      <div id="projects" class="snap-box">
+        <h1>Projects</h1>
+        <p>Under construction..</p>
+      </div>
+
+      <!-- Contact Section -->
+      <div id="contact" class="snap-box">
+        <h1>Contact</h1>
+        <p>Under construction..</p>
+      </div>
+      <!-- Footer Section -->
+      <footer>
+        <h1>Footer</h1>
+        <p>Under construction..</p>
+      </footer>
+    </div>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
