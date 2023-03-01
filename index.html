@@ -8,7 +8,11 @@
   </head>
   <link rel="stylesheet" href="./css/bootstrap.min.css" />
   <link rel="stylesheet" href="./css/outer.min.css" />
-  <link rel="stylesheet" href="./css/inner.min.css" />
+  <link rel="stylesheet" href="./css/home.min.css" />
+  <link rel="stylesheet" href="./css/projects.min.css" />
+  <link rel="stylesheet" href="./css/about.min.css" />
+  <link rel="stylesheet" href="./css/skills.min.css" />
+  <link rel="stylesheet" href="./css/footer.min.css" />
   <body>
     <!-- Navigation Dots -->
     <div class="dots-navigation">
@@ -31,6 +35,18 @@
           <li class="nav-item">
             <a
               class="nav-link"
+              href="#projects"
+              data-bs-container="body"
+              data-bs-toggle="popover"
+              data-bs-placement="right"
+              data-bs-content="Projects"
+              data-bs-trigger="hover focus"
+              ><img src="./images/circle.svg" alt="Bootstrap"
+            /></a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
               href="#about"
               data-bs-container="body"
               data-bs-toggle="popover"
@@ -48,18 +64,6 @@
               data-bs-toggle="popover"
               data-bs-placement="right"
               data-bs-content="Skills"
-              data-bs-trigger="hover focus"
-              ><img src="./images/circle.svg" alt="Bootstrap"
-            /></a>
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link"
-              href="#projects"
-              data-bs-container="body"
-              data-bs-toggle="popover"
-              data-bs-placement="right"
-              data-bs-content="Projects"
               data-bs-trigger="hover focus"
               ><img src="./images/circle.svg" alt="Bootstrap"
             /></a>
@@ -103,6 +107,102 @@
         </div>
       </div>
 
+      <!-- Projects Section -->
+      <div id="projects" class="snap-box">
+        <div class="row">
+          <div class="col-md-10 projects-slider">
+            <div class="card active">
+              <div
+                class="bg"
+                style="background-image: url('./images/app1.jpg')"
+              >
+                <div class="content">
+                  <div class="data">
+                    <div class="circle">
+                      <a href=""><img src="./images/github.svg" /></a>
+                    </div>
+                    <div class="detail">
+                      <h4 class="title">Secret App</h4>
+                      <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Saepe quod repellat doloremque. Tempora modi
+                        eligendi, aspernatur quisquam cumque est optio.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div
+                class="bg"
+                style="background-image: url('./images/app2.jpg')"
+              >
+                <div class="content">
+                  <div class="data">
+                    <div class="circle">
+                      <a href=""><img src="./images/github.svg" /></a>
+                    </div>
+                    <div class="detail">
+                      <h4 class="title">Movies App</h4>
+                      <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Saepe quod repellat doloremque. Tempora modi
+                        eligendi, aspernatur quisquam cumque est optio.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div
+                class="bg"
+                style="background-image: url('./images/app3.jpg')"
+              >
+                <div class="content">
+                  <div class="data">
+                    <div class="circle">
+                      <a href=""><img src="./images/github.svg" /></a>
+                    </div>
+                    <div class="detail">
+                      <h4 class="title">Music App</h4>
+                      <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Saepe quod repellat doloremque. Tempora modi
+                        eligendi, aspernatur quisquam cumque est optio.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div
+                class="bg"
+                style="background-image: url('./images/app4.jpg')"
+              >
+                <div class="content">
+                  <div class="data">
+                    <div class="circle">
+                      <a href=""><img src="./images/github.svg" /></a>
+                    </div>
+                    <div class="detail">
+                      <h4 class="title">Car Company App</h4>
+                      <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Saepe quod repellat doloremque. Tempora modi
+                        eligendi, aspernatur quisquam cumque est optio.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- About Section -->
       <div id="about" class="snap-box">
         <div
@@ -136,20 +236,9 @@
         <p>Under construction..</p>
       </div>
 
-      <!-- Projects Section -->
-      <div id="projects" class="snap-box">
-        <h1>Projects</h1>
-        <p>Under construction..</p>
-      </div>
-
       <!-- Contact Section -->
-      <div id="contact" class="snap-box">
+      <footer id="contact">
         <h1>Contact</h1>
-        <p>Under construction..</p>
-      </div>
-      <!-- Footer Section -->
-      <footer>
-        <h1>Footer</h1>
         <p>Under construction..</p>
       </footer>
     </div>
@@ -157,5 +246,6 @@
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/jquery.js"></script>
     <script src="./js/script.js"></script>
+    <script src="./js/slider.js"></script>
   </body>
 </html>
