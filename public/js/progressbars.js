@@ -9,7 +9,7 @@ $('#snap-wrapper').on('scroll', function () {
 
   // on the skills section
   // difference <= 0 for top
-  if (difference <= -500) {
+  if (difference <= 0) {
     if (!didAnimate) {
       timeout = true;
       animateOn();
@@ -31,25 +31,73 @@ var timeout = false;
 function animateOn() {
   $('#progressbar1').animate(
     {
-      width: '700px',
+      width: '70%',
     },
     700
   );
   $('#progressbar2').animate(
     {
-      width: '200px',
+      width: '20%',
     },
     700
   );
   $('#progressbar3').animate(
     {
-      width: '600px',
+      width: '50%',
     },
     700
   );
   $('#progressbar4').animate(
     {
-      width: '400px',
+      width: '50%',
+    },
+    700
+  );
+  $('#progressbar5').animate(
+    {
+      width: '90%',
+    },
+    700
+  );
+  $('#progressbar6').animate(
+    {
+      width: '30%',
+    },
+    700
+  );
+  $('#progressbarF1').animate(
+    {
+      width: '20%',
+    },
+    700
+  );
+  $('#progressbarF2').animate(
+    {
+      width: '90%',
+    },
+    700
+  );
+  $('#progressbarF3').animate(
+    {
+      width: '60%',
+    },
+    700
+  );
+  $('#progressbarF4').animate(
+    {
+      width: '10%',
+    },
+    700
+  );
+  $('#progressbarF5').animate(
+    {
+      width: '30%',
+    },
+    700
+  );
+  $('#progressbarF6').animate(
+    {
+      width: '80%',
     },
     700,
     function () {
@@ -80,6 +128,54 @@ function animateOff() {
     700
   );
   $('#progressbar4').animate(
+    {
+      width: '0px',
+    },
+    700
+  );
+  $('#progressbar5').animate(
+    {
+      width: '0px',
+    },
+    700
+  );
+  $('#progressbar6').animate(
+    {
+      width: '0px',
+    },
+    700
+  );
+  $('#progressbarF1').animate(
+    {
+      width: '0px',
+    },
+    700
+  );
+  $('#progressbarF2').animate(
+    {
+      width: '0px',
+    },
+    700
+  );
+  $('#progressbarF3').animate(
+    {
+      width: '0px',
+    },
+    700
+  );
+  $('#progressbarF4').animate(
+    {
+      width: '0px',
+    },
+    700
+  );
+  $('#progressbarF5').animate(
+    {
+      width: '0px',
+    },
+    700
+  );
+  $('#progressbarF6').animate(
     {
       width: '0px',
     },

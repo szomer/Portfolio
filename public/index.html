@@ -274,47 +274,125 @@
         <div class="back_ground"></div>
 
         <div class="fore_ground">
-          <div class="skills-title mb-5">
-            <h5 class="ms-5 lead">Skills</h5>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Voluptatem, dolor.
-            </p>
+          <!--Skills title-->
+          <div class="row d-flex justify-content-center">
+            <div class="skills-title-box col d-blocks">
+              <h5 class="lead ps-5">Skills</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis
+                consequatur distinctio labore numquam repellat nemo, atque vitae
+                ab ad. Culpa repellendus ad debitis soluta atque fugiat fugit
+                hic velit eum ratione, in quisquam incidunt aut fuga adipisci
+                magnam laboriosam, quidem molestias aliquam odit nulla ullam nam
+                quam. Quos, quod provident.
+              </p>
+            </div>
           </div>
 
-          <div
-            class="row d-flex justify-content-center align-items-center mb-3"
-          >
-            <div class="col col-md-5 d-flex align-items-center">
-              <div class="skill-bars">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-                  iusto labore quas provident consequatur saepe alias, a quo
-                  sapiente commodi.
-                </p>
-
+          <div class="row d-flex justify-content-evenly">
+            <!--FRONT END -->
+            <div class="skills-box col-md-6 d-block">
+              <div class="skills-box-text front-end">
+                <h5 class="lead">Front End</h5>
+                <div class="skills-box-text-p">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Iusto est ipsum molestiae quisquam magnam expedita
+                    perspiciatis, earum ea, dolores ut voluptas voluptates
+                    nostrum? Nisi distinctio nesciunt sed libero voluptatibus
+                    quos.
+                  </p>
+                </div>
+              </div>
+              <!--Porgression bars FRONT END -->
+              <div class="skills-box-bars">
                 <div class="progressbar">
-                  <span>Sample text</span>
+                  <span>HTML</span>
                   <div class="progressbar-bg">
                     <div id="progressbar1"></div>
                   </div>
                 </div>
                 <div class="progressbar">
-                  <span>Sample text</span>
+                  <span>CSS</span>
                   <div class="progressbar-bg">
                     <div id="progressbar2"></div>
                   </div>
                 </div>
                 <div class="progressbar">
-                  <span>Sample text</span>
+                  <span>JavaScript</span>
                   <div class="progressbar-bg">
                     <div id="progressbar3"></div>
                   </div>
                 </div>
                 <div class="progressbar">
-                  <span>Sample text</span>
+                  <span>TypeScript</span>
                   <div class="progressbar-bg">
                     <div id="progressbar4"></div>
+                  </div>
+                </div>
+                <div class="progressbar">
+                  <span>HTML</span>
+                  <div class="progressbar-bg">
+                    <div id="progressbar5"></div>
+                  </div>
+                </div>
+                <div class="progressbar">
+                  <span>SASS</span>
+                  <div class="progressbar-bg">
+                    <div id="progressbar6"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--BACK END -->
+            <div class="skills-box col-md-6">
+              <div class="skills-box-text back-end">
+                <h5 class="lead">Back End</h5>
+                <div class="skills-box-text-p">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
+                    saepe explicabo modi iure quae laudantium, nemo cupiditate
+                    sint veniam accusantium.
+                  </p>
+                </div>
+              </div>
+              <!--Porgression bars BACK END -->
+              <div class="skills-box-bars">
+                <div class="progressbar-right">
+                  <span>HTML</span>
+                  <div class="progressbar-right-bg">
+                    <div id="progressbarF1"></div>
+                  </div>
+                </div>
+                <div class="progressbar-right">
+                  <span>CSS</span>
+                  <div class="progressbar-right-bg">
+                    <div id="progressbarF2"></div>
+                  </div>
+                </div>
+                <div class="progressbar-right">
+                  <span>JavaScript</span>
+                  <div class="progressbar-right-bg">
+                    <div id="progressbarF3"></div>
+                  </div>
+                </div>
+                <div class="progressbar-right">
+                  <span>TypeScript</span>
+                  <div class="progressbar-right-bg">
+                    <div id="progressbarF4"></div>
+                  </div>
+                </div>
+                <div class="progressbar-right">
+                  <span>HTML</span>
+                  <div class="progressbar-right-bg">
+                    <div id="progressbarF5"></div>
+                  </div>
+                </div>
+                <div class="progressbar-right">
+                  <span class="align-self-right">SASS</span>
+                  <div class="progressbar-right-bg">
+                    <div id="progressbarF6"></div>
                   </div>
                 </div>
               </div>
@@ -351,5 +429,72 @@
     <script src="./js/slider.js"></script>
     <!-- Handle the progression bar animations -->
     <script src="./js/progressbars.js"></script>
+
+    <!--Firebase-->
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js';
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: 'AIzaSyAPlvRDMS7tZJLe9MxsCRhX0OActUDW1v4',
+        authDomain: 'portfolio-9a537.firebaseapp.com',
+        projectId: 'portfolio-9a537',
+        storageBucket: 'portfolio-9a537.appspot.com',
+        messagingSenderId: '651146332958',
+        appId: '1:651146332958:web:12556210d9ea526282970f',
+      };
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+    </script>
   </body>
 </html>
+
+<!-- 
+<div class="skills-title mb-5">
+  <h5 class="ms-5 lead">Skills</h5>
+  <p>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+    Voluptatem, dolor.
+  </p>
+</div>
+
+<div
+  class="row d-flex justify-content-center align-items-center mb-3"
+>
+  <div class="col col-md-5 d-flex align-items-center">
+    <div class="skill-bars">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
+        iusto labore quas provident consequatur saepe alias, a quo
+        sapiente commodi.
+      </p>
+
+      <div class="progressbar">
+        <span>Sample text</span>
+        <div class="progressbar-bg">
+          <div id="progressbar1"></div>
+        </div>
+      </div>
+      <div class="progressbar">
+        <span>Sample text</span>
+        <div class="progressbar-bg">
+          <div id="progressbar2"></div>
+        </div>
+      </div>
+      <div class="progressbar">
+        <span>Sample text</span>
+        <div class="progressbar-bg">
+          <div id="progressbar3"></div>
+        </div>
+      </div>
+      <div class="progressbar">
+        <span>Sample text</span>
+        <div class="progressbar-bg">
+          <div id="progressbar4"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
