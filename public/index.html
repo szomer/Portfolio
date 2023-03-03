@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="./css/about.min.css" />
   <link rel="stylesheet" href="./css/skills.min.css" />
   <link rel="stylesheet" href="./css/footer.min.css" />
+  <link rel="stylesheet" href="./css/extra.min.css" />
 
   <body>
     <!-- Navigation Dots -->
@@ -114,7 +115,19 @@
       <div id="home" class="snap-box">
         <div class="row home-title justify-content-evenly">
           <div class="col-md-5 ps-5">
-            <span class="lead">Welcome</span>
+            <div class="animation-text">
+              <h3 class="title">
+                <span>Hi,</span>
+                <span>My name is</span>
+                <span>Suzanne</span>
+              </h3>
+
+              <h4 class="title">
+                <span>Welcome</span>
+                <span>to my</span>
+                <span>Portfolio</span>
+              </h4>
+            </div>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum
               nisi quo laboriosam sint mollitia corporis quaerat repudiandae,
@@ -140,7 +153,7 @@
       <!-- Projects Section -->
       <div id="projects" class="snap-box">
         <div class="projects-title">
-          <h5 class="ms-5 lead">Projects</h5>
+          <h5 class="scramble lead ps-5">Projects</h5>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit.
             Voluptatem, dolor.
@@ -251,7 +264,7 @@
             <img src="images/cave.png" />
             <div class="row about-text-row">
               <div class="col about-text">
-                <h5 class="lead ms-5">About Me</h5>
+                <h5 class="scramble lead ps-5">About Me</h5>
                 <p class="mx-1">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
                   suscipit adipisci debitis non, earum ipsam vitae quaerat
@@ -277,7 +290,7 @@
           <!--Skills title-->
           <div class="row d-flex justify-content-center">
             <div class="skills-title-box col d-blocks">
-              <h5 class="lead ps-5">Skills</h5>
+              <h5 class="scramble lead ps-5">Skills</h5>
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis
                 consequatur distinctio labore numquam repellat nemo, atque vitae
@@ -293,7 +306,7 @@
             <!--FRONT END -->
             <div class="skills-box col-md-6 d-block">
               <div class="skills-box-text front-end">
-                <h5 class="lead">Front End</h5>
+                <h6 class="lead scramble">Front End</h6>
                 <div class="skills-box-text-p">
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -348,7 +361,7 @@
             <!--BACK END -->
             <div class="skills-box col-md-6">
               <div class="skills-box-text back-end">
-                <h5 class="lead">Back End</h5>
+                <h6 class="lead scramble">Back End</h6>
                 <div class="skills-box-text-p">
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
@@ -404,11 +417,28 @@
       <!-- Contact Section -->
       <footer id="contact">
         <div class="content">
-          <h1>Contact</h1>
-          <p>Under construction..</p>
-
-          <div class="camping-img">
-            <img src="./images/camping.svg" />
+          <div class="row d-flex justify-content-evenly align-items-center">
+            <div class="content-box text col">
+              <h5 class="lead ps-5">Contact</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+                nobis nisi obcaecati! Maxime aspernatur officiis odit non
+                doloribus ipsum voluptatum, quia veniam ducimus nostrum
+                molestias esse, ab sint minima, atque saepe animi asperiores
+                ratione quis? Quia ex perspiciatis reprehenderit? Nostrum ex
+                quis perferendis, sit, animi, aliquam eos facere voluptate ea
+                odio quidem provident consequatur reprehenderit sunt cumque vero
+                repudiandae necessitatibus dolores rerum! Dolore fuga at
+                voluptatem distinctio. Dolorum, dolor maiores? Cumque
+                dignissimos blanditiis culpa vitae, modi ipsam voluptatum
+                corrupti dolor. Amet est sed maiores dignissimos minima
+                inventore ut ad praesentium, totam blanditiis possimus soluta!
+                Odit perferendis tempore harum quos maiores.
+              </p>
+            </div>
+            <div class="content-box col-md-5 d-flex align-items-center">
+              <img src="./images/camping.svg" />
+            </div>
           </div>
         </div>
 
@@ -425,6 +455,8 @@
     <script src="./js/jquery.js"></script>
     <!-- Other -->
     <script src="./js/script.js"></script>
+    <!-- Handle text animations-->
+    <script src="./js/text.js"></script>
     <!-- Handle the project slider-->
     <script src="./js/slider.js"></script>
     <!-- Handle the progression bar animations -->
@@ -450,51 +482,3 @@
     </script>
   </body>
 </html>
-
-<!-- 
-<div class="skills-title mb-5">
-  <h5 class="ms-5 lead">Skills</h5>
-  <p>
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-    Voluptatem, dolor.
-  </p>
-</div>
-
-<div
-  class="row d-flex justify-content-center align-items-center mb-3"
->
-  <div class="col col-md-5 d-flex align-items-center">
-    <div class="skill-bars">
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-        iusto labore quas provident consequatur saepe alias, a quo
-        sapiente commodi.
-      </p>
-
-      <div class="progressbar">
-        <span>Sample text</span>
-        <div class="progressbar-bg">
-          <div id="progressbar1"></div>
-        </div>
-      </div>
-      <div class="progressbar">
-        <span>Sample text</span>
-        <div class="progressbar-bg">
-          <div id="progressbar2"></div>
-        </div>
-      </div>
-      <div class="progressbar">
-        <span>Sample text</span>
-        <div class="progressbar-bg">
-          <div id="progressbar3"></div>
-        </div>
-      </div>
-      <div class="progressbar">
-        <span>Sample text</span>
-        <div class="progressbar-bg">
-          <div id="progressbar4"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div> -->
