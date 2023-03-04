@@ -1,6 +1,5 @@
 //--------
 // hanlde forest image size
-
 const popoverTriggerList = document.querySelectorAll(
   '[data-bs-toggle="popover"]'
 );
@@ -32,7 +31,8 @@ const themeCheckBox = document.querySelector('#themebtn');
 const bodyElement = document.querySelector('body');
 const videoClouds = document.querySelector('.video-clouds');
 const videoMoon = document.querySelector('.video-moon');
-const loader = document.querySelector('.loader');
+const loader = document.querySelector('#transition');
+const loaderText = document.querySelector('#transition-text');
 
 themeCheckBox.addEventListener('change', () => {
   // loading animation
@@ -54,10 +54,12 @@ themeCheckBox.addEventListener('change', () => {
 
 // function for loading screen
 function load() {
+  loaderText.classList.remove('hidden');
   loader.classList.remove('hidden');
   loader.classList.add('animate-loader');
   setTimeout(() => {
     loader.classList.add('hidden');
+    loaderText.classList.add('hidden');
     loader.classList.remove('animate-loader');
-  }, 3000);
+  }, 1900);
 }

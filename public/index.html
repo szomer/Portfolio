@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
   </head>
+
   <!--Library-->
   <link rel="stylesheet" href="./css/bootstrap.min.css" />
   <!-- Apply Theme -->
   <link rel="stylesheet" href="./css/theme.css" />
   <!--Structure style-->
   <link rel="stylesheet" href="./css/outer.min.css" />
+
   <!--Section style-->
   <link rel="stylesheet" href="./css/home.min.css" />
   <link rel="stylesheet" href="./css/projects.min.css" />
@@ -21,13 +23,12 @@
   <link rel="stylesheet" href="./css/text.min.css" />
 
   <body>
-    <!--Cover page when theme switch-->
-    <div class="loader hidden">
-      <div class="loader-text">
-        <p>&#8593;</p>
-        <p>Changing Theme</p>
-      </div>
+    <div id="transition">
+      <img src="./images/loading.gif" />
+      <span class="hidden lead" id="transition-text">Changing Theme..</span>
     </div>
+    <!--transition-->
+    <script src="./js/transition.js"></script>
 
     <!-- Navigation Dots -->
     <div class="navbar-filter"></div>
@@ -177,7 +178,7 @@
 
         <div class="row">
           <div class="col-md-10 projects-slider">
-            <div class="card active">
+            <div class="card">
               <div id="slider-bg-1" class="bg">
                 <div class="content">
                   <div class="data">
@@ -226,7 +227,7 @@
               </div>
             </div>
 
-            <div class="card">
+            <div class="card active">
               <div id="slider-bg-3" class="bg">
                 <div class="content">
                   <div class="data">
