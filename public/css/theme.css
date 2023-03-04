@@ -15,12 +15,14 @@
     rgba(0, 0, 0, 1) 90%
   );
   --footer-shadow: #000;
+  --hsla-shadow: 2px 10px 30px hsla(0, 0%, 100%, 0.07);
 
   --background-img-treeline: url('../images/treeline.png');
   --background-img-cave: url('../images/cave.png');
   --background-img-watercolors: url('../images/watercolors.jpg');
   --background-img-layers: url('../images/layers.jpg');
 
+  --video: url();
   --navigation-img-circle: url('../images/circle.svg');
   --navigation-img-sun: url('../images/sun.svg');
   --github-img: url('../images/github.svg');
@@ -30,12 +32,12 @@
 .theme-light {
   --background-color: rgb(243, 248, 255);
   --text-color: rgb(0, 0, 0);
-  --text-color-secondary: #222222;
+  --text-color-secondary: #e7e7e7;
 
   --background-home: linear-gradient(
     0deg,
-    rgb(0, 27, 118) 0%,
-    rgba(255, 255, 255, 0) 100%
+    rgba(0, 149, 255, 0.56) 0%,
+    rgba(0, 0, 0, 0) 80%
   );
   --background-card: rgba(255, 255, 255, 0.774);
   --background-skills: linear-gradient(
@@ -44,6 +46,7 @@
     rgb(243, 249, 255) 90%
   );
   --footer-shadow: rgba(243, 248, 255, 0.416);
+  --hsla-shadow: 2px 10px 20px #00000040;
 
   --background-img-treeline: url('../images/treeline-light.png');
   --background-img-cave: url('../images/cave-light.png');

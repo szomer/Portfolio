@@ -22,3 +22,22 @@ function setHomeForestWidth() {
 }
 
 setHomeForestWidth();
+
+//---------
+
+const themeCheckBox = document.querySelector('#themebtn');
+const bodyElement = document.querySelector('body');
+const videoClouds = document.querySelector('.video-clouds');
+const videoMoon = document.querySelector('.video-moon');
+
+themeCheckBox.addEventListener('change', () => {
+  if (themeCheckBox.checked) {
+    bodyElement.classList.add('theme-light');
+    videoMoon.classList.remove('hidden');
+    videoClouds.classList.add('hidden');
+  } else {
+    bodyElement.classList.remove('theme-light');
+    videoClouds.classList.remove('hidden');
+    videoMoon.classList.add('hidden');
+  }
+});
