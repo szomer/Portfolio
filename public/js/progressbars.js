@@ -9,7 +9,7 @@ $('#snap-wrapper').on('scroll', function () {
 
   // on the skills section
   // difference <= 0 for top
-  if (difference <= 0) {
+  if (difference <= -300) {
     if (!didAnimate) {
       timeout = true;
       animateOn();
@@ -33,47 +33,29 @@ function animateOn() {
     {
       width: '70%',
     },
-    700
-  );
-  $('#progressbar2').animate(
-    {
-      width: '20%',
-    },
-    700
-  );
-  $('#progressbar3').animate(
-    {
-      width: '50%',
-    },
-    700
-  );
-  $('#progressbar4').animate(
-    {
-      width: '50%',
-    },
-    700
-  );
-  $('#progressbar5').animate(
-    {
-      width: '90%',
-    },
-    700
-  );
-  $('#progressbar6').animate(
-    {
-      width: '30%',
-    },
-    700
+    500
   );
   $('#progressbarF1').animate(
     {
       width: '20%',
     },
-    700
+    500
+  );
+  $('#progressbar2').animate(
+    {
+      width: '20%',
+    },
+    600
   );
   $('#progressbarF2').animate(
     {
       width: '90%',
+    },
+    600
+  );
+  $('#progressbar3').animate(
+    {
+      width: '50%',
     },
     700
   );
@@ -83,23 +65,41 @@ function animateOn() {
     },
     700
   );
+  $('#progressbar4').animate(
+    {
+      width: '50%',
+    },
+    800
+  );
   $('#progressbarF4').animate(
     {
       width: '10%',
     },
-    700
+    800
+  );
+  $('#progressbar5').animate(
+    {
+      width: '90%',
+    },
+    900
   );
   $('#progressbarF5').animate(
     {
       width: '30%',
     },
-    700
+    900
+  );
+  $('#progressbar6').animate(
+    {
+      width: '30%',
+    },
+    1000
   );
   $('#progressbarF6').animate(
     {
       width: '80%',
     },
-    700,
+    1000,
     function () {
       didAnimate = true;
       didDeAnimate = false;
@@ -113,73 +113,73 @@ function animateOff() {
     {
       width: '0px',
     },
-    700
-  );
-  $('#progressbar2').animate(
-    {
-      width: '0px',
-    },
-    700
-  );
-  $('#progressbar3').animate(
-    {
-      width: '0px',
-    },
-    700
-  );
-  $('#progressbar4').animate(
-    {
-      width: '0px',
-    },
-    700
-  );
-  $('#progressbar5').animate(
-    {
-      width: '0px',
-    },
-    700
-  );
-  $('#progressbar6').animate(
-    {
-      width: '0px',
-    },
-    700
+    300
   );
   $('#progressbarF1').animate(
     {
       width: '0px',
     },
-    700
+    300
+  );
+  $('#progressbar2').animate(
+    {
+      width: '0px',
+    },
+    300
   );
   $('#progressbarF2').animate(
     {
       width: '0px',
     },
-    700
+    300
+  );
+  $('#progressbar3').animate(
+    {
+      width: '0px',
+    },
+    400
   );
   $('#progressbarF3').animate(
     {
       width: '0px',
     },
-    700
+    400
+  );
+  $('#progressbar4').animate(
+    {
+      width: '0px',
+    },
+    400
   );
   $('#progressbarF4').animate(
     {
       width: '0px',
     },
-    700
+    400
   );
   $('#progressbarF5').animate(
     {
       width: '0px',
     },
-    700
+    400
+  );
+  $('#progressbar5').animate(
+    {
+      width: '0px',
+    },
+    400
+  );
+  $('#progressbar6').animate(
+    {
+      width: '0px',
+    },
+    500
   );
   $('#progressbarF6').animate(
     {
       width: '0px',
     },
-    700,
+    500,
     function () {
       didDeAnimate = true;
       didAnimate = false;

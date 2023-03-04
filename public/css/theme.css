@@ -1,0 +1,57 @@
+:root {
+  --background-color: black;
+  --text-color: rgb(255, 255, 255);
+  --text-color-secondary: #000000;
+
+  --background-home: linear-gradient(
+    0deg,
+    rgb(255, 255, 255) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  --background-card: rgba(0, 0, 0, 0.774);
+  --background-skills: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.4) 0%,
+    rgba(0, 0, 0, 1) 90%
+  );
+  --footer-shadow: #000;
+
+  --background-img-treeline: url('../images/treeline.png');
+  --background-img-cave: url('../images/cave.png');
+  --background-img-watercolors: url('../images/watercolors.jpg');
+  --background-img-layers: url('../images/layers.jpg');
+
+  --navigation-img-circle: url('../images/circle.svg');
+  --navigation-img-sun: url('../images/sun.svg');
+  --github-img: url('../images/github.svg');
+  --link-img: url('../images/link.svg');
+}
+
+.theme-light {
+  --background-color: rgb(243, 248, 255);
+  --text-color: rgb(0, 0, 0);
+  --text-color-secondary: #222222;
+
+  --background-home: linear-gradient(
+    0deg,
+    rgb(0, 27, 118) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  --background-card: rgba(255, 255, 255, 0.774);
+  --background-skills: linear-gradient(
+    0deg,
+    rgba(129, 175, 255, 0.15) 0%,
+    rgb(243, 249, 255) 90%
+  );
+  --footer-shadow: rgba(243, 248, 255, 0.416);
+
+  --background-img-treeline: url('../images/treeline-light.png');
+  --background-img-cave: url('../images/cave-light.png');
+  --background-img-watercolors: url('../images/watercolors-light.jpg');
+  --background-img-layers: url('../images/layers-light.jpg');
+
+  --navigation-img-circle: url('../images/circle-light.svg');
+  --navigation-img-sun: url('../images/sun-light.svg');
+  --github-img: url('../images/github-light.svg');
+  --link-img: url('../images/link-light.svg');
+}

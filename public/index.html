@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="./css/skills.min.css" />
   <link rel="stylesheet" href="./css/footer.min.css" />
   <link rel="stylesheet" href="./css/extra.min.css" />
+  <link rel="stylesheet" href="./css/theme.css" />
 
   <body>
     <!-- Navigation Dots -->
@@ -34,7 +35,7 @@
               data-bs-content="Home"
               data-bs-trigger="hover focus"
             >
-              <img src="./images/circle.svg" alt="Bootstrap"
+              <img
             /></a>
           </li>
           <li class="nav-item">
@@ -46,7 +47,7 @@
               data-bs-placement="right"
               data-bs-content="Projects"
               data-bs-trigger="hover focus"
-              ><img src="./images/circle.svg" alt="Bootstrap"
+              ><img
             /></a>
           </li>
           <li class="nav-item">
@@ -58,7 +59,7 @@
               data-bs-placement="right"
               data-bs-content="About"
               data-bs-trigger="hover focus"
-              ><img src="./images/circle.svg" alt="Bootstrap"
+              ><img
             /></a>
           </li>
           <li class="nav-item">
@@ -70,7 +71,7 @@
               data-bs-placement="right"
               data-bs-content="Skills"
               data-bs-trigger="hover focus"
-              ><img src="./images/circle.svg" alt="Bootstrap"
+              ><img
             /></a>
           </li>
           <li class="nav-item mb-3">
@@ -82,7 +83,7 @@
               data-bs-placement="right"
               data-bs-content="Contact"
               data-bs-trigger="hover focus"
-              ><img src="./images/circle.svg" alt="Bootstrap"
+              ><img
             /></a>
           </li>
           <div class="vertical-line"></div>
@@ -91,10 +92,10 @@
     </div>
 
     <div class="theme-btn">
-      <span class="lead">theme</span>
+      <span>theme</span>
       <div class="form-check form-switch">
         <input
-          class="form-check-input"
+          class="form-check-input bg-info"
           type="checkbox"
           role="switch"
           id="themebtn"
@@ -146,7 +147,7 @@
         </div>
 
         <div class="home-forest">
-          <img src="./images/treelinedark.png" />
+          <img />
         </div>
       </div>
 
@@ -163,14 +164,16 @@
         <div class="row">
           <div class="col-md-10 projects-slider">
             <div class="card active">
-              <div
-                class="bg"
-                style="background-image: url('./images/app2.jpg')"
-              >
+              <div id="slider-bg-1" class="bg">
                 <div class="content">
                   <div class="data">
-                    <div class="circle">
-                      <a href=""><img src="./images/github.svg" /></a>
+                    <div class="data-links">
+                      <div class="circle">
+                        <a href=""><img /></a>
+                      </div>
+                      <div class="external-link">
+                        <a href=""><img /></a>
+                      </div>
                     </div>
                     <div class="detail">
                       <h4 class="title">Movies App</h4>
@@ -185,14 +188,16 @@
               </div>
             </div>
             <div class="card">
-              <div
-                class="bg"
-                style="background-image: url('./images/app1.jpg')"
-              >
+              <div id="slider-bg-2" class="bg">
                 <div class="content">
                   <div class="data">
-                    <div class="circle">
-                      <a href=""><img src="./images/github.svg" /></a>
+                    <div class="data-links">
+                      <div class="circle">
+                        <a href=""><img /></a>
+                      </div>
+                      <div class="external-link">
+                        <a href=""><img /></a>
+                      </div>
                     </div>
                     <div class="detail">
                       <h4 class="title">Secret App</h4>
@@ -208,14 +213,16 @@
             </div>
 
             <div class="card">
-              <div
-                class="bg"
-                style="background-image: url('./images/app3.jpg')"
-              >
+              <div id="slider-bg-3" class="bg">
                 <div class="content">
                   <div class="data">
-                    <div class="circle">
-                      <a href=""><img src="./images/github.svg" /></a>
+                    <div class="data-links">
+                      <div class="circle">
+                        <a href=""><img /></a>
+                      </div>
+                      <div class="external-link">
+                        <a href=""><img /></a>
+                      </div>
                     </div>
                     <div class="detail">
                       <h4 class="title">Music App</h4>
@@ -230,17 +237,43 @@
               </div>
             </div>
             <div class="card">
-              <div
-                class="bg"
-                style="background-image: url('./images/app4.jpg')"
-              >
+              <div id="slider-bg-4" class="bg">
                 <div class="content">
                   <div class="data">
-                    <div class="circle">
-                      <a href=""><img src="./images/github.svg" /></a>
+                    <div class="data-links">
+                      <div class="circle">
+                        <a href=""><img /></a>
+                      </div>
+                      <div class="external-link">
+                        <a href=""><img /></a>
+                      </div>
                     </div>
                     <div class="detail">
                       <h4 class="title">Car Company App</h4>
+                      <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Saepe quod repellat doloremque. Tempora modi
+                        eligendi, aspernatur quisquam cumque est optio.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div id="slider-bg-5" class="bg">
+                <div class="content">
+                  <div class="data">
+                    <div class="data-links">
+                      <div class="circle">
+                        <a href=""><img /></a>
+                      </div>
+                      <div class="external-link">
+                        <a href=""><img /></a>
+                      </div>
+                    </div>
+                    <div class="detail">
+                      <h4 class="title">Web Games</h4>
                       <p>
                         Lorem, ipsum dolor sit amet consectetur adipisicing
                         elit. Saepe quod repellat doloremque. Tempora modi
@@ -263,7 +296,7 @@
           <div
             class="about-cave align-items-center justify-content-center col-lg-8 col-xl-7"
           >
-            <img src="images/cave.png" />
+            <img />
             <div class="row about-text-row">
               <div class="col about-text">
                 <h5 class="scramble lead ps-5">About Me</h5>
