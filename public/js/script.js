@@ -38,18 +38,16 @@ themeCheckBox.addEventListener('change', () => {
   // loading animation
   load();
 
-  setTimeout(() => {
-    // set theme
-    if (themeCheckBox.checked) {
-      bodyElement.classList.add('theme-light');
-      videoMoon.classList.remove('hidden');
-      videoClouds.classList.add('hidden');
-    } else {
-      bodyElement.classList.remove('theme-light');
-      videoClouds.classList.remove('hidden');
-      videoMoon.classList.add('hidden');
-    }
-  }, 700);
+  // set theme
+  if (themeCheckBox.checked) {
+    bodyElement.classList.add('theme-light');
+    videoMoon.classList.remove('hidden');
+    videoClouds.classList.add('hidden');
+  } else {
+    bodyElement.classList.remove('theme-light');
+    videoClouds.classList.remove('hidden');
+    videoMoon.classList.add('hidden');
+  }
 });
 
 // function for loading screen
@@ -61,5 +59,5 @@ function load() {
     loader.classList.add('hidden');
     loaderText.classList.add('hidden');
     loader.classList.remove('animate-loader');
-  }, 1900);
+  }, 2000);
 }
