@@ -1,3 +1,4 @@
+// Scroll position
 $('#snap-wrapper').on('scroll', function () {
   // while animating, return
   if (timeout) return;
@@ -24,10 +25,12 @@ $('#snap-wrapper').on('scroll', function () {
   }
 });
 
+// Keeping track of states
 var didAnimate = false;
 var didDeAnimate = false;
 var timeout = false;
 
+// Animations
 function animateOn() {
   $('#progressbar1').animate(
     {
@@ -107,7 +110,6 @@ function animateOn() {
     }
   );
 }
-
 function animateOff() {
   $('#progressbar1').animate(
     {

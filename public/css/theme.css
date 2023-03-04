@@ -1,3 +1,4 @@
+/* Dark theme */
 :root {
   --background-color: black;
   --text-color: rgb(255, 255, 255);
@@ -30,6 +31,7 @@
   --link-img: url('../images/link.svg');
 }
 
+/* Light theme */
 .theme-light {
   --background-color: rgb(243, 248, 255);
   --text-color: rgb(0, 0, 0);

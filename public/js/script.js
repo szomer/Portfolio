@@ -1,3 +1,6 @@
+//--------
+// hanlde forest image size
+
 const popoverTriggerList = document.querySelectorAll(
   '[data-bs-toggle="popover"]'
 );
@@ -24,20 +27,37 @@ function setHomeForestWidth() {
 setHomeForestWidth();
 
 //---------
-
+// theme
 const themeCheckBox = document.querySelector('#themebtn');
 const bodyElement = document.querySelector('body');
 const videoClouds = document.querySelector('.video-clouds');
 const videoMoon = document.querySelector('.video-moon');
+const loader = document.querySelector('.loader');
 
 themeCheckBox.addEventListener('change', () => {
-  if (themeCheckBox.checked) {
-    bodyElement.classList.add('theme-light');
-    videoMoon.classList.remove('hidden');
-    videoClouds.classList.add('hidden');
-  } else {
-    bodyElement.classList.remove('theme-light');
-    videoClouds.classList.remove('hidden');
-    videoMoon.classList.add('hidden');
-  }
+  // loading animation
+  load();
+
+  setTimeout(() => {
+    // set theme
+    if (themeCheckBox.checked) {
+      bodyElement.classList.add('theme-light');
+      videoMoon.classList.remove('hidden');
+      videoClouds.classList.add('hidden');
+    } else {
+      bodyElement.classList.remove('theme-light');
+      videoClouds.classList.remove('hidden');
+      videoMoon.classList.add('hidden');
+    }
+  }, 700);
 });
+
+// function for loading screen
+function load() {
+  loader.classList.remove('hidden');
+  loader.classList.add('animate-loader');
+  setTimeout(() => {
+    loader.classList.add('hidden');
+    loader.classList.remove('animate-loader');
+  }, 3000);
+}
