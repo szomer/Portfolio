@@ -25,7 +25,7 @@
 
   --video: url();
   --navigation-img-circle: url('../images/circle.svg');
-  --navigation-img-sun: url('../images/sun.svg');
+  --navigation-img-sun: url('../images/circle-fill.svg');
   --github-img: url('../images/github.svg');
   --link-img: url('../images/link.svg');
 }
@@ -56,7 +56,7 @@
   --background-img-layers: url('../images/layers-light.jpg');
 
   --navigation-img-circle: url('../images/circle-light.svg');
-  --navigation-img-sun: url('../images/sun-light.svg');
+  --navigation-img-sun: url('../images/circle-fill-light.svg');
   --github-img: url('../images/github-light.svg');
   --link-img: url('../images/link-light.svg');
 }
