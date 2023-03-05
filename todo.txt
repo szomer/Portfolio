@@ -5,3 +5,5 @@
 - combine css files/js files to one min version
 - robot.txt text
 - apple touch specification
+- contact option
+- soft skills tags
