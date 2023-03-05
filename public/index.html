@@ -2,29 +2,39 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta charset="UTF-8" />
+    <meta name="description" content="Free Web tutorials" />
+    <meta
+      name="keywords"
+      content="computer science degree, web developer, front end development, back end development, portfolio"
+    />
+    <meta name="author" content="Suzanne Zomer" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>Portfolio - Suzanne Zomer</title>
+
+    <!--favicon-->
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+
+    <!--Library-->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- Apply Theme -->
+    <link rel="stylesheet" href="./css/theme.css" />
+    <!--Structure style-->
+    <link rel="stylesheet" href="./css/outer.min.css" />
+
+    <!--Section style-->
+    <link rel="stylesheet" href="./css/home.min.css" />
+    <link rel="stylesheet" href="./css/projects.min.css" />
+    <link rel="stylesheet" href="./css/about.min.css" />
+    <link rel="stylesheet" href="./css/skills.min.css" />
+    <link rel="stylesheet" href="./css/footer.min.css" />
+    <link rel="stylesheet" href="./css/text.min.css" />
   </head>
-
-  <!--Library-->
-  <link rel="stylesheet" href="./css/bootstrap.min.css" />
-  <!-- Apply Theme -->
-  <link rel="stylesheet" href="./css/theme.css" />
-  <!--Structure style-->
-  <link rel="stylesheet" href="./css/outer.min.css" />
-
-  <!--Section style-->
-  <link rel="stylesheet" href="./css/home.min.css" />
-  <link rel="stylesheet" href="./css/projects.min.css" />
-  <link rel="stylesheet" href="./css/about.min.css" />
-  <link rel="stylesheet" href="./css/skills.min.css" />
-  <link rel="stylesheet" href="./css/footer.min.css" />
-  <link rel="stylesheet" href="./css/text.min.css" />
 
   <body>
     <div id="transition">
-      <img src="./images/loading.gif" />
+      <img alt="loading with circles" src="./images/loading.gif" />
       <span class="hidden lead" id="transition-text">Changing Theme..</span>
     </div>
     <!--transition-->
@@ -47,6 +57,7 @@
               data-bs-trigger="hover focus"
             >
               <img
+                alt="clickable circle to navigate the page to the home section"
             /></a>
           </li>
           <li class="nav-item">
@@ -59,6 +70,7 @@
               data-bs-content="Projects"
               data-bs-trigger="hover focus"
               ><img
+                alt="clickable circle to navigate the page to the projects section"
             /></a>
           </li>
           <li class="nav-item">
@@ -71,6 +83,7 @@
               data-bs-content="About"
               data-bs-trigger="hover focus"
               ><img
+                alt="clickable circle to navigate the page to the about section"
             /></a>
           </li>
           <li class="nav-item">
@@ -83,6 +96,7 @@
               data-bs-content="Skills"
               data-bs-trigger="hover focus"
               ><img
+                alt="clickable circle to navigate the page  to the skills section"
             /></a>
           </li>
           <li class="nav-item mb-3">
@@ -95,6 +109,7 @@
               data-bs-content="Contact"
               data-bs-trigger="hover focus"
               ><img
+                alt="clickable circle to navigate the page to the contact section"
             /></a>
           </li>
           <div class="vertical-line"></div>
@@ -162,14 +177,16 @@
         </div>
 
         <div class="home-forest">
-          <img />
+          <img
+            alt="silhouette of a forest with a couple sitting on a rock by a campfire"
+          />
         </div>
       </div>
 
       <!-- Projects Section -->
       <div id="projects" class="snap-box">
         <div class="projects-title">
-          <h5 class="lead ps-5">Projects</h5>
+          <h2 class="lead ps-5">Projects</h2>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit.
             Voluptatem, dolor.
@@ -184,14 +201,17 @@
                   <div class="data">
                     <div class="data-links">
                       <div class="circle">
-                        <a href=""><img /></a>
+                        <a href=""
+                          ><img
+                            href="clickable icon of github to view the project files"
+                        /></a>
                       </div>
                       <div class="external-link">
                         <a href=""><img /></a>
                       </div>
                     </div>
                     <div class="detail">
-                      <h4 class="title">Movies App</h4>
+                      <h3 class="title">Movies App</h3>
                       <p>
                         Lorem, ipsum dolor sit amet consectetur adipisicing
                         elit. Saepe quod repellat doloremque. Tempora modi
@@ -208,14 +228,17 @@
                   <div class="data">
                     <div class="data-links">
                       <div class="circle">
-                        <a href=""><img /></a>
+                        <a href=""
+                          ><img
+                            href="clickable icon of github to view the project files"
+                        /></a>
                       </div>
                       <div class="external-link">
                         <a href=""><img /></a>
                       </div>
                     </div>
                     <div class="detail">
-                      <h4 class="title">Secret App</h4>
+                      <h3 class="title">Secret App</h3>
                       <p>
                         Lorem, ipsum dolor sit amet consectetur adipisicing
                         elit. Saepe quod repellat doloremque. Tempora modi
@@ -233,14 +256,20 @@
                   <div class="data">
                     <div class="data-links">
                       <div class="circle">
-                        <a href=""><img /></a>
+                        <a href=""
+                          ><img
+                            href="clickable icon of github to view the project files"
+                        /></a>
                       </div>
                       <div class="external-link">
-                        <a href=""><img /></a>
+                        <a href=""
+                          ><img
+                            href="clickable icon of an external link to view the live webite of a project"
+                        /></a>
                       </div>
                     </div>
                     <div class="detail">
-                      <h4 class="title">Music App</h4>
+                      <h3 class="title">Music App</h3>
                       <p>
                         Lorem, ipsum dolor sit amet consectetur adipisicing
                         elit. Saepe quod repellat doloremque. Tempora modi
@@ -257,14 +286,20 @@
                   <div class="data">
                     <div class="data-links">
                       <div class="circle">
-                        <a href=""><img /></a>
+                        <a href=""
+                          ><img
+                            href="clickable icon of github to view the project files"
+                        /></a>
                       </div>
                       <div class="external-link">
-                        <a href=""><img /></a>
+                        <a href=""
+                          ><img
+                            href="clickable icon of an external link to view the live webite of a project"
+                        /></a>
                       </div>
                     </div>
                     <div class="detail">
-                      <h4 class="title">Car Company App</h4>
+                      <h3 class="title">Car Company App</h3>
                       <p>
                         Lorem, ipsum dolor sit amet consectetur adipisicing
                         elit. Saepe quod repellat doloremque. Tempora modi
@@ -281,14 +316,20 @@
                   <div class="data">
                     <div class="data-links">
                       <div class="circle">
-                        <a href=""><img /></a>
+                        <a href=""
+                          ><img
+                            href="clickable icon of github to view the project files"
+                        /></a>
                       </div>
                       <div class="external-link">
-                        <a href=""><img /></a>
+                        <a href=""
+                          ><img
+                            href="clickable icon of an external link to view the live webite of a project"
+                        /></a>
                       </div>
                     </div>
                     <div class="detail">
-                      <h4 class="title">Web Games</h4>
+                      <h3 class="title">Web Games</h3>
                       <p>
                         Lorem, ipsum dolor sit amet consectetur adipisicing
                         elit. Saepe quod repellat doloremque. Tempora modi
@@ -311,10 +352,12 @@
           <div
             class="about-cave align-items-center justify-content-center col-lg-8 col-xl-7"
           >
-            <img />
+            <img
+              href="silhouette of the inside of a cave blending into the page"
+            />
             <div class="row about-text-row">
               <div class="col about-text">
-                <h5 class="lead ps-5">About Me</h5>
+                <h2 class="lead ps-5">About Me</h2>
                 <p class="px-2">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
                   suscipit adipisci debitis non, earum ipsam vitae quaerat
@@ -327,7 +370,10 @@
           <div
             class="about-picture col d-flex justify-content-center align-items-center"
           >
-            <img src="./images/woman.svg" />
+            <img
+              src="./images/woman.svg"
+              alt="colorfull illustration of a woman next to a sun"
+            />
           </div>
         </div>
       </div>
@@ -340,7 +386,7 @@
           <!--Skills title-->
           <div class="row d-flex justify-content-center">
             <div class="skills-title-box col d-blocks">
-              <h5 class="lead ps-5">Skills</h5>
+              <h2 class="lead ps-5">Skills</h2>
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis
                 consequatur distinctio labore numquam repellat nemo, atque vitae
@@ -356,7 +402,7 @@
             <!--FRONT END -->
             <div class="skills-box col-md-6 d-block">
               <div class="skills-box-text front-end">
-                <h6 class="lead">Front End</h6>
+                <h3 class="lead">Front End</h3>
                 <div class="skills-box-text-p">
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -411,7 +457,7 @@
             <!--BACK END -->
             <div class="skills-box col-md-6">
               <div class="skills-box-text back-end">
-                <h6 class="lead">Back End</h6>
+                <h3 class="lead">Back End</h3>
                 <div class="skills-box-text-p">
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel
@@ -469,7 +515,7 @@
         <div class="content">
           <div class="row d-flex justify-content-evenly align-items-center">
             <div class="content-box text col">
-              <h5 class="lead ps-5">Contact</h5>
+              <h2 class="lead ps-5">Contact</h2>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
                 nobis nisi obcaecati! Maxime aspernatur officiis odit non
@@ -487,7 +533,10 @@
               </p>
             </div>
             <div class="content-box col-md-5 d-flex align-items-center">
-              <img src="./images/camping.svg" />
+              <img
+                src="./images/camping.svg"
+                href="colorfull illustration of a camping by a tent"
+              />
             </div>
           </div>
         </div>
