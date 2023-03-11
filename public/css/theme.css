@@ -9,7 +9,7 @@
     rgba(255, 255, 255, 1) 0%,
     rgba(0, 106, 255, 0.7) 100%
   );
-  --background-card: rgba(0, 0, 0, 0.75);
+  --background-card: rgba(0, 0, 0, 0.9);
   --background-skills: linear-gradient(
     0deg,
     rgba(0, 0, 0, 0.4) 0%,
@@ -41,7 +41,7 @@
     rgba(0, 149, 255, 0.56) 0%,
     rgba(0, 0, 0, 0) 80%
   );
-  --background-card: rgb(243, 248, 255, 0.8);
+  --background-card: rgb(243, 248, 255, 0.9);
   --background-skills: linear-gradient(
     0deg,
     rgba(129, 175, 255, 0.15) 0%,
