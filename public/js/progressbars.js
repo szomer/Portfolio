@@ -34,31 +34,31 @@ var timeout = false;
 function animateOn() {
   $('#progressbar1').animate(
     {
-      width: '70%',
+      width: '90%',
     },
     500
   );
   $('#progressbarF1').animate(
     {
-      width: '20%',
+      width: '80%',
     },
     500
   );
   $('#progressbar2').animate(
     {
-      width: '20%',
+      width: '90%',
     },
     600
   );
   $('#progressbarF2').animate(
     {
-      width: '90%',
+      width: '70%',
     },
     600
   );
   $('#progressbar3').animate(
     {
-      width: '50%',
+      width: '80%',
     },
     700
   );
@@ -70,25 +70,25 @@ function animateOn() {
   );
   $('#progressbar4').animate(
     {
-      width: '50%',
+      width: '80%',
     },
     800
   );
   $('#progressbarF4').animate(
     {
-      width: '10%',
+      width: '50%',
     },
     800
   );
   $('#progressbar5').animate(
     {
-      width: '90%',
+      width: '40%',
     },
     900
   );
   $('#progressbarF5').animate(
     {
-      width: '30%',
+      width: '50%',
     },
     900
   );
@@ -100,7 +100,7 @@ function animateOn() {
   );
   $('#progressbarF6').animate(
     {
-      width: '80%',
+      width: '20%',
     },
     1000,
     function () {
