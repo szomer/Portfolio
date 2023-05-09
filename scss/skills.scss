@@ -1,0 +1,195 @@
+/* SKILLS */
+#skills {
+  margin: 0;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 0;
+  background-color: #3685bd;
+
+  .fore_ground {
+    position: relative;
+    z-index: 4;
+
+    .row {
+      margin: 1% 2% 1% 5%;
+      padding: 0;
+
+      .skills-title-box {
+        max-width: 720px;
+        margin: 2rem 0;
+        margin-left: 3%;
+        padding: 1rem;
+        border: 2px solid rgb(39, 116, 172);
+        box-shadow: var(--hsla-shadow);
+        height: 100%;
+        border-radius: 0.375em;
+
+        h2 {
+          font-size: 2rem;
+        }
+        p {
+          font-size: 0.9rem;
+        }
+
+        .tags {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          flex-wrap: wrap;
+
+          .tag {
+            background-color: #3535358f;
+            color: #ffffffcf;
+            padding: 0.2rem 0.5rem;
+            margin: 0.2rem 0.4rem;
+            border-radius: 9px;
+            font-size: 0.9rem;
+            font-weight: bolder;
+          }
+        }
+      }
+
+      .skills-box {
+        max-width: 900px;
+        padding: 0rem 1rem;
+        margin: 2rem 0rem;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        .back-end {
+          text-align: right;
+          display: flex;
+          flex-direction: column;
+          justify-content: end;
+          align-items: flex-end;
+          h3 {
+            margin-right: 10%;
+            padding-right: 5px;
+            border-right: 2px solid #ff6583;
+          }
+        }
+        .front-end {
+          text-align: left;
+          display: flex;
+          flex-direction: column;
+          justify-content: start;
+          align-items: flex-start;
+          h3 {
+            margin-left: 10%;
+            padding-left: 5px;
+            border-left: 2px solid #ff6583;
+          }
+        }
+        .skills-box-text {
+          &-p {
+            font-size: 0.9rem;
+            margin: 0;
+            padding: 1rem 0rem;
+            max-width: 700px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+          }
+          .tags {
+            padding-bottom: 0.5rem;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            .tag {
+              background-color: #3535358f;
+              color: #ffffffcf;
+              padding: 0.2rem 0.5rem;
+              margin: 0.2rem 0.4rem;
+              border-radius: 9px;
+              font-size: 0.9rem;
+              font-weight: bolder;
+            }
+          }
+          .tage-left {
+            justify-content: left;
+          }
+          .tags-right {
+            justify-content: right;
+          }
+        }
+      }
+    }
+    .skills-box-bars {
+      width: 100%;
+      padding: 0rem 10%;
+
+      .progressbar-right {
+        border-right: 2px solid #ff6583;
+        padding-bottom: 0.9rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        &-bg {
+          display: flex;
+          justify-content: flex-end;
+          flex-direction: row;
+          width: 100%;
+          height: 7px;
+
+          div {
+            width: 100%;
+            height: 100%;
+            background: #3685bd;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            box-shadow: 0px 0px 10px var(--background-color);
+          }
+        }
+      }
+
+      .progressbar {
+        border-left: 2px solid #ff6583;
+        padding-bottom: 0.8rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        &-bg {
+          width: 100%;
+          height: 7px;
+
+          div {
+            width: 100%;
+
+            background: #3685bd;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            box-shadow: 0px 0px 10px var(--background-color);
+          }
+        }
+      }
+
+      span {
+        padding-left: 5px;
+        font-size: 0.9rem;
+        line-height: 1.2rem;
+      }
+    }
+  }
+
+  .back_ground {
+    height: 150%;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    position: absolute;
+    background-color: var(--background-color);
+    background: var(--background-skills), var(--background-img-layers);
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}

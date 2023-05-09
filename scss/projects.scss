@@ -1,0 +1,225 @@
+/* PROJECTS */
+#projects {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  height: 100%;
+
+  .projects-title {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-end;
+    height: 15%;
+    min-height: 6rem;
+    width: 100%;
+    padding-left: 18%;
+    margin-left: 2%;
+    position: relative;
+    p {
+      margin: 0;
+      padding: 0;
+      font-size: 0.9rem;
+    }
+    h2 {
+      font-size: 2rem;
+    }
+  }
+
+  .row {
+    width: 100%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 1rem 0rem 2rem 1rem;
+
+    .projects-slider {
+      display: flex;
+      height: 100%;
+      max-height: 600px;
+      max-width: 1350px;
+      .card {
+        background-color: (--background-color);
+        cursor: pointer;
+        height: 100%;
+        width: 4%;
+        min-width: 20px;
+
+        border-radius: 0.375em;
+        margin-left: 1%;
+        background-position: end;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+        transition: width var(--animation-time) linear;
+      }
+
+      .card.active {
+        width: 100%;
+        cursor: default;
+        border: none;
+        box-shadow: var(--hsla-shadow);
+
+        .circle,
+        .detail,
+        .data {
+          opacity: 1;
+        }
+        .bg {
+          box-shadow: inset 0px -20px 100px 10px rgba(0, 0, 0, 0.8);
+        }
+      }
+
+      .data-links {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        div {
+          margin: 8px;
+          height: 25px;
+          width: 25px;
+        }
+
+        .external-link {
+          img {
+            content: var(--link-img);
+            transition: ease-in-out 0.3s;
+          }
+        }
+
+        .circle {
+          img {
+            content: var(--github-img);
+            transition: ease-in-out 0.3s;
+          }
+        }
+
+        img:hover {
+          transform: scale(1.5);
+        }
+      }
+
+      .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        height: 100%;
+        transform: scale(0.6666666666666);
+        transition: all var(--animation-time) linear;
+      }
+
+      .card.active .content {
+        transform: scale(1);
+      }
+
+      .filler {
+        flex: 1;
+      }
+
+      .data {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 100%;
+        background-color: var(--background-card);
+
+        opacity: 0;
+        padding: 2%;
+      }
+
+      .detail {
+        transition: all var(--animation-time) linear;
+
+        opacity: 0;
+      }
+
+      h3 {
+        margin: 0;
+
+        font-size: 1.3rem;
+      }
+      p {
+        font-size: 1.1rem;
+      }
+      @media (max-width: 699px) {
+        p {
+          font-size: 0.9rem;
+        }
+      }
+
+      .card.active .detail {
+        opacity: 1;
+        margin-left: 0;
+      }
+
+      .bg {
+        height: 100%;
+        width: 100%;
+        box-shadow: inset 0px -20px 100px 10px #00000056;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+        transform: scale(1.5);
+        transition: all var(--animation-time) linear;
+      }
+
+      .card.active .bg {
+        width: 100%;
+        transform: scale(1);
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+:root {
+  --animation-time: 0.2s;
+}
+
+@media (min-width: 700px) {
+  #slider-bg-1 {
+    background-image: url('../images/apps/desktop/weather.jpg');
+  }
+  #slider-bg-2 {
+    background-image: url('../images/apps/desktop/movies.jpg');
+  }
+  #slider-bg-3 {
+    background-image: url('../images/apps/desktop/secrets.jpg');
+  }
+  #slider-bg-4 {
+    background-image: url('../images/apps/desktop/todo.jpg');
+  }
+  #slider-bg-5 {
+    background-image: url('../images/apps/desktop/nft.jpg');
+  }
+}
+
+@media (max-width: 699px) {
+  #slider-bg-1 {
+    background-image: url('../images/apps/mobile/weather.jpg');
+  }
+  #slider-bg-2 {
+    background-image: url('../images/apps/mobile/movies.jpg');
+  }
+  #slider-bg-3 {
+    background-image: url('../images/apps/mobile/secrets.jpg');
+  }
+  #slider-bg-4 {
+    background-image: url('../images/apps/mobile/todo.jpg');
+  }
+  #slider-bg-5 {
+    background-image: url('../images/apps/mobile/nft.jpg');
+  }
+}

@@ -11,3 +11,6 @@
 - image/vid sizes
 - remove redundant files
 - write text for back/front end sections
+
+other:
+- update projects
