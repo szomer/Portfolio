@@ -10,7 +10,9 @@
 - check SEO generator
 - image/vid sizes
 - remove redundant files
-- write text for back/front end sections
 
 other:
 - update projects
+- update skills section
+- host on firebase domain 
+- reconsider side menu on mobile
