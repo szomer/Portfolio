@@ -6,8 +6,8 @@
 
   --background-home: linear-gradient(
     0deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(0, 106, 255, 0.7) 100%
+    rgba(255, 255, 255, 0.9) 0%,
+    rgba(0, 106, 255, 0.6) 100%
   );
   --background-card: rgba(0, 0, 0, 0.9);
   --background-skills: linear-gradient(

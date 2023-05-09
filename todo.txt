@@ -1,9 +1,13 @@
 - add meta description
 - add h1 title
-- wite text on website
 - make links (a) descriptive
 - combine css files/js files to one min version
 - robot.txt text
 - apple touch specification
-- contact option
-- soft skills tags
+- go over text
+- make all a tags open in window/tab
+- check responsiveness on different devices
+- check SEO generator
+- image/vid sizes
+- remove redundant files
+- write text for back/front end sections
