@@ -26,14 +26,27 @@ body {
   flex-direction: row;
   align-items: center;
   background-color: var(--background-card);
-  padding-left: 10px;
   border-bottom-left-radius: 5px;
-  span {
-    color: var(--text-color);
-    font-size: 0.9rem;
+
+  @media (max-width: 699px) {
+    span {
+      color: var(--text-color);
+      font-size: 0.7rem;
+      margin-right: 0.3rem;
+    }
+    .form-switch {
+      margin: 0;
+    }
   }
-  .form-switch {
-    margin: 0.5rem;
+  @media (min-width: 700px) {
+    span {
+      color: var(--text-color);
+      font-size: 0.9rem;
+      margin: 0 0.4rem;
+    }
+    .form-switch {
+      margin: 0.3rem;
+    }
   }
 }
 

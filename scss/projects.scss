@@ -64,11 +64,12 @@
         cursor: default;
         border: none;
         box-shadow: var(--hsla-shadow);
-
-        .circle,
         .detail,
         .data {
           opacity: 1;
+          a {
+            display: block;
+          }
         }
         .bg {
           box-shadow: inset 0px -20px 100px 10px rgba(0, 0, 0, 0.8);
@@ -83,7 +84,9 @@
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
-
+        a {
+          display: none;
+        }
         img {
           content: var(--github-img);
           transition: ease-in-out 0.3s;
