@@ -8,7 +8,6 @@ footer {
   overflow: hidden;
   position: relative;
   z-index: 3;
-  color: black;
 
   .content {
     height: 600px;
@@ -21,8 +20,8 @@ footer {
       height: 600px;
 
       .text {
-        max-width: 900px;
-        padding: 0% 5% 0% 13%;
+        max-width: 700px;
+        padding: 0% 8%;
 
         h2 {
           font-size: 2rem;
@@ -31,6 +30,10 @@ footer {
 
         p {
           font-size: 0.9rem;
+          color: black;
+        }
+        #designedby {
+          letter-spacing: 2px;
         }
         button {
           padding: 0.3rem;
@@ -99,5 +102,11 @@ footer {
 @media screen and (min-height: 750px) and (min-width: 1250px) {
   footer {
     scroll-snap-align: end;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  #projects {
+    padding-left: 30px;
   }
 }

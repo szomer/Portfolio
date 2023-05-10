@@ -1,4 +1,10 @@
 /* SKILLS */
+@media screen and (min-width: 700px) {
+  .fore_ground {
+    margin-left: 30px;
+  }
+}
+
 #skills {
   margin: 0;
   position: relative;
@@ -12,15 +18,12 @@
   .fore_ground {
     position: relative;
     z-index: 4;
+    padding: 3% 2% 0% 2%;
 
     .row {
-      margin: 1% 2% 1% 5%;
-      padding: 0;
-
       .skills-title-box {
         max-width: 720px;
-        margin: 2rem 0 0.5rem 0;
-        margin-left: 3%;
+        margin: 1rem;
         padding: 1rem;
         border: 2px solid rgb(39, 116, 172);
         box-shadow: var(--hsla-shadow);

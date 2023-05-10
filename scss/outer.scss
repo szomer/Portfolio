@@ -32,7 +32,7 @@ body {
     span {
       color: var(--text-color);
       font-size: 0.7rem;
-      margin-right: 0.3rem;
+      margin: 0rem 0.3rem;
     }
     .form-switch {
       margin: 0;
@@ -50,7 +50,7 @@ body {
   }
 }
 
-@media screen and (max-width: 749px) {
+@media screen and (max-width: 699px) {
   .navbar-filter,
   .dots-navigation,
   .nav-pills .nav-link.active,
@@ -58,7 +58,7 @@ body {
     display: none;
   }
 }
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 700px) {
   .navbar-filter {
     background-color: var(--background-card);
     position: absolute;
@@ -89,8 +89,10 @@ body {
         align-items: center;
 
         .vertical-line {
-          border-left: 1px solid var(--text-color);
-          height: 100px;
+          background-color: var(--text-color);
+          width: 1px;
+          opacity: 0.4;
+          height: 80px;
         }
 
         .nav-item {
@@ -117,6 +119,12 @@ body {
     img {
       background: var(--navigation-img-circlefill);
     }
+  }
+  .nav-link.active {
+    opacity: 1;
+  }
+  .nav-link {
+    opacity: 0.6;
   }
   .popover {
     border-radius: 5%;

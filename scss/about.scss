@@ -14,8 +14,7 @@
     .about-cave {
       position: relative;
       padding: 0;
-      margin: 1rem 1rem 0 0;
-      margin-left: 4%;
+      margin-top: 1rem;
       max-width: 990px;
       width: 100%;
 
@@ -41,7 +40,7 @@
           max-width: 700px;
           max-height: 80%;
           top: 46%;
-          left: 55%;
+          left: 50%;
           translate: (-50% -50%);
           position: absolute;
 
@@ -51,9 +50,13 @@
           }
           p {
             font-size: 0.9rem;
-            margin-left: 3%;
-            margin-right: 7%;
+            margin: 0% 5%;
             text-shadow: 0px 0px 20px var(--text-color);
+          }
+        }
+        @media screen and (min-width: 700px) {
+          .about-text {
+            padding-left: 35px;
           }
         }
       }
@@ -85,5 +88,11 @@
       height: 100%;
       object-fit: cover;
     }
+  }
+}
+
+@media screen and (min-width: 700px) {
+  #about {
+    padding-left: 50px;
   }
 }
