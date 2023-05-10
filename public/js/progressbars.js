@@ -34,7 +34,7 @@ var timeout = false;
 function animateOn() {
   $('#progressbar1').animate(
     {
-      width: '90%',
+      width: '80%',
     },
     500
   );
@@ -46,13 +46,13 @@ function animateOn() {
   );
   $('#progressbar2').animate(
     {
-      width: '90%',
+      width: '80%',
     },
     600
   );
   $('#progressbarF2').animate(
     {
-      width: '70%',
+      width: '60%',
     },
     600
   );
@@ -64,45 +64,33 @@ function animateOn() {
   );
   $('#progressbarF3').animate(
     {
-      width: '60%',
+      width: '35%',
     },
     700
   );
   $('#progressbar4').animate(
     {
-      width: '80%',
+      width: '60%',
     },
     800
   );
   $('#progressbarF4').animate(
     {
-      width: '50%',
+      width: '30%',
     },
     800
   );
   $('#progressbar5').animate(
     {
-      width: '40%',
+      width: '30%',
     },
     900
   );
   $('#progressbarF5').animate(
     {
-      width: '50%',
-    },
-    900
-  );
-  $('#progressbar6').animate(
-    {
       width: '30%',
     },
-    1000
-  );
-  $('#progressbarF6').animate(
-    {
-      width: '20%',
-    },
-    1000,
+    900,
     function () {
       didAnimate = true;
       didDeAnimate = false;
@@ -169,20 +157,7 @@ function animateOff() {
     {
       width: '0px',
     },
-    400
-  );
-  $('#progressbar6').animate(
-    {
-      width: '0px',
-    },
-    500
-  );
-  $('#progressbarF6').animate(
-    {
-      width: '0px',
-    },
-    500,
-    function () {
+    400, function () {
       didDeAnimate = true;
       didAnimate = false;
       timeout = false;

@@ -16,3 +16,26 @@ other:
 - update skills section
 - host on firebase domain 
 - reconsider side menu on mobile
+
+
+
+
+frontend
+- html, css, sass, scss, less, javascript
+
+- bootstrap, tailwindcss,
+- react, angular
+- jquery
+
+backend:
+- javascript, java, typescript, motoko, kotlin
+
+- mongodb, mysql, postgresql, firebase, heroku
+- nodejs, internet computer, 
+- passport,  oauth
+
+other:
+- npm
+- vscode
+- git
+  
