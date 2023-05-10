@@ -1,5 +1,6 @@
 // Scroll position
 $('#snap-wrapper').on('scroll', function () {
+
   // while animating, return
   if (timeout) return;
 
@@ -13,12 +14,13 @@ $('#snap-wrapper').on('scroll', function () {
   if (difference <= -300) {
     if (!didAnimate) {
       timeout = true;
+      ($('#snap-wrapper').width() < 750) ? smallDevice = true : smallDevice = false;
       animateOn();
     }
   }
   // above the skills section
   else {
-    if (!didDeAnimate) {
+    if (!didDeAnimate && !smallDevice) {
       timeout = true;
       animateOff();
     }
@@ -29,6 +31,8 @@ $('#snap-wrapper').on('scroll', function () {
 var didAnimate = false;
 var didDeAnimate = false;
 var timeout = false;
+// mobile users
+var smallDevice = false;
 
 // Animations
 function animateOn() {

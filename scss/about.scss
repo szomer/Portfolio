@@ -16,12 +16,12 @@
       padding: 0;
       margin: 1rem 1rem 0 0;
       margin-left: 4%;
-      max-width: 1200px;
+      max-width: 990px;
       width: 100%;
 
       img {
         width: 100%;
-        min-height: 710px;
+        min-height: 730px;
         background-image: var(--background-img-watercolors);
         content: var(--background-img-cave);
         border: 1px solid var(--background-color);
@@ -40,7 +40,7 @@
           padding: 0;
           max-width: 700px;
           max-height: 80%;
-          top: 48%;
+          top: 46%;
           left: 55%;
           translate: (-50% -50%);
           position: absolute;
@@ -61,9 +61,9 @@
 
     .about-picture {
       width: 100%;
-      min-width: 200px;
+      min-width: 150px;
       perspective: 1500px;
-      margin: 0;
+      margin: 0 1rem;
       padding: 0;
       img {
         width: 100%;

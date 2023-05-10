@@ -155,14 +155,12 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-
         &-bg {
           width: 100%;
           height: 7px;
-
           div {
             width: 100%;
-
+            height: 100%;
             background: #3685bd;
             border-top-right-radius: 5px;
             border-bottom-right-radius: 5px;
@@ -172,7 +170,7 @@
       }
 
       span {
-        padding-left: 5px;
+        padding: 0px 7px;
         font-size: 0.9rem;
         line-height: 1.2rem;
       }

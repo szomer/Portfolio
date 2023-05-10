@@ -1,7 +1,7 @@
 /* CONTACT */
 footer {
   margin: 0;
-  scroll-snap-align: center;
+
   min-height: 600px;
   min-width: 350px;
   height: 800px;
@@ -9,7 +9,6 @@ footer {
   position: relative;
   z-index: 3;
   color: black;
-  scroll-snap-align: end;
 
   .content {
     height: 600px;
@@ -94,5 +93,11 @@ footer {
       transform: skewY(-14deg);
       box-shadow: 40px -10px 20px var(--footer-shadow);
     }
+  }
+}
+
+@media screen and (min-height: 750px) and (min-width: 1250px) {
+  footer {
+    scroll-snap-align: end;
   }
 }
