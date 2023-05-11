@@ -37,20 +37,42 @@ const videoClouds = document.querySelector('.video-clouds');
 const videoMoon = document.querySelector('.video-moon');
 const loader = document.querySelector('#transition');
 const loaderText = document.querySelector('#transition-text');
+updateVideo();
 themeCheckBox.addEventListener('change', () => {
   // loading animation
   load();
+  // device size
+  updateVideo();
   // set theme
   if (themeCheckBox.checked) {
     bodyElement.classList.add('theme-light');
     videoMoon.classList.remove('hidden');
+    $('.video-moon').get(0).play();
     videoClouds.classList.add('hidden');
+    $('.video-clouds').get(0).pause();
   } else {
     bodyElement.classList.remove('theme-light');
     videoClouds.classList.remove('hidden');
+    $('.video-clouds').get(0).play();
     videoMoon.classList.add('hidden');
+    $('.video-moon').get(0).pause();
   }
 });
+function updateVideo() {
+  if ($('#home').width() < 800) {
+    // change to mobile version
+    $('.video-clouds').attr('src', './videos/clouds3_mobile.mp4');
+    $('.video-moon').attr('src', './videos/moon_mobile.mp4');
+    $(".video-clouds")[0].load();
+    $(".video-moon")[0].load();
+  } else {
+    // change to desktop version
+    $('.video-clouds').attr('src', './videos/clouds3.mp4');
+    $('.video-moon').attr('src', './videos/moon.mp4');
+    $(".video-clouds")[0].load();
+    $(".video-moon")[0].load();
+  }
+}
 // function for loading screen
 function load() {
   loaderText.classList.remove('hidden');
