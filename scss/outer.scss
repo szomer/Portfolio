@@ -1,12 +1,14 @@
 body,
 html {
   height: 100%;
-  height: 100vh;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
   width: 100%;
-  width: 100vw;
-  max-width: 100%;
+  min-width: 100vw;
   margin: 0;
   padding: 0;
+  overflow: hidden;
+  padding-bottom: 10px;
 }
 
 body {
@@ -15,6 +17,12 @@ body {
   position: relative;
   background-color: var(--background-color);
   color: var(--text-color);
+  padding-bottom: env(safe-area-inset-bottom);
+  -ms-overflow-style: none; /* Hide scrollbar IE and Edge */
+  scrollbar-width: none; /* Hide scrollbar Firefox */
+}
+body::-webkit-scrollbar {
+  display: none; // Hide scrollbar Chrome, Safari and Opera
 }
 
 .theme-btn {
@@ -147,7 +155,8 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden !important;
-
+  -ms-overflow-style: none; /* Hide scrollbar IE and Edge */
+  scrollbar-width: none; /* Hide scrollbar Firefox */
   &-box {
     width: 100vw !important;
     margin: 0;
@@ -157,6 +166,9 @@ body {
     min-height: 600px;
     min-width: 350px;
   }
+}
+.snap::-webkit-scrollbar {
+  display: none; // Hide scrollbar Chrome, Safari and Opera
 }
 
 @media screen and (min-height: 750px) and (min-width: 1250px) {

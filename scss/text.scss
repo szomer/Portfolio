@@ -70,6 +70,7 @@ h2:hover::after {
         text-shadow: 1px 1px var(--background-color);
         font-size: 4rem;
         animation-delay: 1.5s;
+        padding-bottom: 0.5rem;
       }
     }
 
@@ -98,6 +99,7 @@ h2:hover::after {
           text-shadow: 1px 1px var(--background-color);
           font-size: 4rem;
           animation-delay: 5s;
+          padding-bottom: 0.5rem;
         }
       }
     }

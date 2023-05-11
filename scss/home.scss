@@ -55,9 +55,9 @@
     padding: 0rem 1rem;
     z-index: 2;
     width: 100%;
-    p {
+    .h1_modified {
+      font-weight: normal;
       color: var(--text-color-secondary);
-      width: 90%;
       max-width: 360px;
       font-size: 1rem;
       text-shadow: var(--hsla-shadow);

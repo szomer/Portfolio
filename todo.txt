@@ -1,21 +1,11 @@
-- add meta description
-- add h1 title
-- make links (a) descriptive
-- combine css files/js files to one min version
-- robot.txt text
-- apple touch specification
-- go over text
-- make all a tags open in window/tab
+- combine css files files to one min version
 - check responsiveness on different devices
 - check SEO generator
 - image/vid sizes
-- remove redundant files
-
-other:
-- update projects
-- update skills section
 - host on firebase domain 
 - reconsider side menu on mobile
+
+
 
 ---skills----
 frontend
