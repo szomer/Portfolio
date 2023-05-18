@@ -8,17 +8,17 @@ h2::after {
   content: '';
   position: absolute;
   width: 100%;
-  transform: scaleX(0);
+  transform: scaleX(1);
   height: 2px;
   bottom: 0;
   left: 0;
   background-color: #ff6583;
-  transform-origin: bottom right;
+  transform-origin: bottom left;
   transition: transform 0.25s ease-out;
 }
 
 h2:hover::after {
-  transform: scaleX(1);
+  transform: scaleX(0);
   transform-origin: bottom left;
 }
 
@@ -44,6 +44,7 @@ h2:hover::after {
         opacity: 0;
         animation-timing-function: ease;
         animation-duration: 3s;
+        font-family: 'Staatliches', cursive;
       }
     }
 
@@ -67,8 +68,8 @@ h2:hover::after {
       }
       &:last-child {
         color: #ff6583;
-        text-shadow: 1px 1px var(--background-color);
-        font-size: 4rem;
+        text-shadow: 2px 2px var(--background-color);
+        font-size: 4.4rem;
         animation-delay: 1.5s;
         padding-bottom: 0.5rem;
       }
@@ -96,8 +97,8 @@ h2:hover::after {
         }
         &:last-child {
           color: #ff6583;
-          text-shadow: 1px 1px var(--background-color);
-          font-size: 4rem;
+          text-shadow: 2px 2px var(--background-color);
+          font-size: 4.4rem;
           animation-delay: 5s;
           padding-bottom: 0.5rem;
         }
