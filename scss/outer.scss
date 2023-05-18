@@ -2,10 +2,8 @@
 
 body,
 html {
-  padding-bottom: 90px;
   height: 100%;
   min-height: 100vh;
-  min-height: -webkit-fill-available;
   width: 100%;
   min-width: 100vw;
   margin: 0;
@@ -19,7 +17,6 @@ body {
   position: relative;
   background-color: var(--background-color);
   color: var(--text-color);
-  padding-bottom: env(safe-area-inset-bottom);
   -ms-overflow-style: none; /* Hide scrollbar IE and Edge */
   scrollbar-width: none; /* Hide scrollbar Firefox */
 }
@@ -159,6 +156,11 @@ body::-webkit-scrollbar {
   overflow-x: hidden !important;
   -ms-overflow-style: none; /* Hide scrollbar IE and Edge */
   scrollbar-width: none; /* Hide scrollbar Firefox */
+
+  padding-bottom: 20px;
+  min-height: -webkit-fill-available;
+  padding-bottom: env(safe-area-inset-bottom);
+
   &-box {
     width: 100vw !important;
     margin: 0;
